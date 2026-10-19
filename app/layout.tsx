@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   description: "Surplus food matching and verified handover for donors and NGOs.",
 };
 
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html

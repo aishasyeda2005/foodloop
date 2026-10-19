@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async rewrites() {
+    return [
+      { source: '/lots', destination: '/api/lots' },
+      { source: '/offers/:id/accept', destination: '/api/offers/:id/accept' },
+      { source: '/pickups/:id/handover', destination: '/api/pickups/:id/handover' },
+    ];
+  },
 };
 
 export default nextConfig;
